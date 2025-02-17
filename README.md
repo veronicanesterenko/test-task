@@ -31,8 +31,12 @@ git clone https://github.com/ваш-репозиторий/test-task.git
 mvn clean package
 
 ## Запустите приложение, указав путь к текстовому файлу:
-java -jar test-task-1.0-SNAPSHOT.jar -f /путь/к/файлу.txt</br>
+java -jar <путь к jar файлу> <набор параметров></br>
 Где:
--f или --file: Путь к текстовому файлу для обработки.</br>
+-o=console или --output=console: вывод данных осуществляется в консоль.</br>
+-o=file или --output=file: вывод данных осуществялется в файл, задайте путь к файлу в следующем параметре.</br>
+-p или --path=<путь к выходному файлу>: задаёт путь к файлу для вывода данных.</br>
+-s=salary или --sort=name: можно задать сотировку данных.</br>
+--order=ask или --order=desc: можно задавать порядок сортировки прямой(ask) или обратный(desc).
 ## Пример:
-java -jar target/test-task-1.0-SNAPSHOT.jar -f input.txt
+java -jar target/test-task-1.0-SNAPSHOT.jar --sort=salary --order=desc

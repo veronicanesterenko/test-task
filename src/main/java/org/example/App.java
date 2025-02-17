@@ -77,7 +77,8 @@ public class App {
         } catch (IOException e) {
             System.out.println("Неверный путь, такого файла не существует: " + e.getMessage());
         }
-
-
+        catch (Exception e) {
+            System.out.println("Ошибка! Изучите инструкцию по запуску: " + e.getMessage());
+        }
     }
 }
