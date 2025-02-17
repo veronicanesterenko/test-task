@@ -39,4 +39,4 @@ java -jar <путь к jar файлу> <набор параметров></br>
 -s=salary или --sort=name: можно задать сотировку данных.</br>
 --order=ask или --order=desc: можно задавать порядок сортировки прямой(ask) или обратный(desc).
 ## Пример:
-java -jar target/test-task-1.0-SNAPSHOT.jar --sort=salary --order=desc
+java -jar target/koronatech-task-1.0-SNAPSHOT.jar --sort=salary --order=desc
